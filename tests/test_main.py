@@ -10,3 +10,8 @@ class TestMain:
         name = get_name
         with allure.step(f'Проверить имя: {name}'):
             assert 'Test' == 'Test'
+
+    def test_two(self, get_name):
+        name = get_name
+        with allure.step(f'Проверить второй тест'):
+            assert 'Test' == 'Test'
