@@ -14,4 +14,4 @@ class TestMain:
     def test_two(self, get_name):
         name = get_name
         with allure.step(f'Проверить второй тест'):
-            assert 'Test' == 'Test'
+            assert 'Test' != 'Test'
